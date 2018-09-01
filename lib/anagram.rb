@@ -1,13 +1,19 @@
 # Your code goes here!
 class Anagram
-  attr_accessor :word
+  attr_accessor :word, :reverse_array
 
   def initialize(word)
     self.word = word.downcase
+    self.reverse_array = self.word.reverse.split("")
   end
 
   def match(words_array)
-    words_string = words_array.join(",")
+    result = []
+    words_array.each do |candidate|
+      if candidate.split("") == self.reverse_array
+        result << candidate
+      end
+    end
     words_string.downcase.scan(self.word.reverse)
   end
 end
