@@ -8,6 +8,5 @@ class Anagram
 
   def match(words_array)
     words.match(self.word.reverse)
-    end
   end
 end
