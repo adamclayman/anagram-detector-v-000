@@ -4,7 +4,7 @@ class Anagram
 
   def initialize(word)
     self.word = word.downcase
-    self.reverse_array = self.word.reverse.split("")
+    self.reverse_array = self.word.reverse.split("").sort
   end
 
   def match(words_array)
