@@ -8,6 +8,6 @@ class Anagram
 
   def match(words_array)
     words_string = words_array.join(",")
-    words_string.match(self.word.downcase.reverse)
+    words_string.scan(self.word.downcase.reverse)
   end
 end
