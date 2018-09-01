@@ -14,6 +14,6 @@ class Anagram
         result << candidate
       end
     end
-    words_string.downcase.scan(self.word.reverse)
+    return result
   end
 end
