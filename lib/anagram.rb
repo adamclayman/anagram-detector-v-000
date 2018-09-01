@@ -8,7 +8,7 @@ class Anagram
 
   def match(words_array)
     words_array.each do |candidate|
-      if candidate == self.word.reverse
+      if candidate.downcase == self.word.downcase.reverse
         return candidate.to_a
       end
     end
