@@ -6,7 +6,7 @@ class Anagram
     self.word = word.downcase
   end
 
-  def self.match(words_array)
+  def match(words_array)
     words_string = words_array.join(",")
     words_string.downcase.scan(self.word.reverse)
   end
