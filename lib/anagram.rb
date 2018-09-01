@@ -7,6 +7,6 @@ class Anagram
   end
 
   def match(words_array)
-    words.match(self.word.reverse)
+    words_array.match(self.word.reverse)
   end
 end
