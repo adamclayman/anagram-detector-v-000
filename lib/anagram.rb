@@ -7,7 +7,7 @@ class Anagram
   end
 
   def match(words_array)
-    words_string = words_array * ","
+    words_string = words_array.join(",")
     words_string.match(self.word.downcase.reverse)
   end
 end
