@@ -7,6 +7,10 @@ class Anagram
   end
 
   def match(words_array)
-    words_array.match()
+    words_array.each do |candidate|
+      if candidate == self.word.reverse
+        return candidate.to_a
+      end
+    end
   end
 end
